@@ -12,11 +12,14 @@ function App() {
   })
   return (
     <div className="App">
-      {loading ? <Loader
-        type="spinner"
-        color="#a00598"
-        size={150}
-      /> :
+      {loading ?
+        <header className="App-header">
+          <Loader
+            type="spinner"
+            color="white"
+            size={150}
+          />
+        </header> :
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
